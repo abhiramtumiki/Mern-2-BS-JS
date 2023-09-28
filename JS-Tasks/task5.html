@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td>Name :</td>
+          <td>
+            <input onblur="f1()" type="text" id="name" required /><span
+              id="nm"
+            ></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Email :</td>
+          <td>
+            <input onblur="f2()" type="email" id="mail" required /><span
+              id="ml"
+            ></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Website :</td>
+          <td>
+            <input onblur="f3()" type="url" id="url" required /><span
+              id="rl"
+            ></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Message :</td>
+          <td>
+            <textarea
+              onblur="f4()"
+              id="msg"
+              cols="30"
+              rows="10"
+              required
+            ></textarea
+            ><span id="mg"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="text-align: center" colspan="2">
+            <button id="submit">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <script src="task5.js"></script>
+  </body>
+</html>

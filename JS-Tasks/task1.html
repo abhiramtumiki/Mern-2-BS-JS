@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="fom">
+      <label>Enter Number</label>
+      <input type="number" id="num" placeholder="Enter Number" />
+      <button type="submit" id="submit-btn">Get Answer</button>
+    </form>
+    <p>The Result is <span id="res">______</span></p>
+    <br />
+    <br /><br /><br /><br /><br /><br />
+    <p>function reverse() {</p>
+    <p>var x = document.getElementById("num").value;</p>
+    <p>var res = 0;</p>
+    <p>while (x > 0) {</p>
+    <p>var s = x % 10;</p>
+    <p>res = res * 10 + s;</p>
+    <p>x = Math.floor(x / 10);</p>
+    <p>}</p>
+    <p>document.getElementById("res").innerHTML = res;</p>
+    <p>}</p>
+
+    <script src="task1.js"></script>
+  </body>
+</html>

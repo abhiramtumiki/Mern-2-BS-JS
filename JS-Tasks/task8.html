@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task5</title>
+  </head>
+  <body>
+    <form action="https://ethnus.com/" onsubmit="return chk()">
+      <div
+        style="
+          background-image: linear-gradient(
+            to top,
+            rgb(251, 87, 183),
+            rgb(255, 255, 175)
+          );
+          padding: 50px 0px;
+          margin: 0px 100px;
+        "
+      >
+        <table
+          cellspacing="0"
+          cellpadding="10"
+          style="margin-left: auto; margin-right: auto"
+        >
+          <caption
+            style="
+              font-weight: 700;
+              font-size: 35px;
+              color: blue;
+              margin-bottom: 10px;
+            "
+          >
+            Registration form
+          </caption>
+          <tr>
+            <td style="text-align: center" colspan="3">
+              <p id="p"></p>
+            </td>
+          </tr>
+          <tr>
+            <th>First Name</th>
+            <td>
+              <input
+                onkeyup="fname()"
+                type="text"
+                name="fName"
+                id="fName"
+                style="width: 100%"
+              />
+            </td>
+            <td style="color: red" id="fname">POOR</td>
+          </tr>
+          <tr>
+            <th>Last Name</th>
+            <td>
+              <input
+                onkeyup="lname()"
+                type="text"
+                name="lName"
+                id="lName"
+                style="width: 100%"
+              />
+            </td>
+            <td style="color: red" id="lname">POOR</td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td>
+              <input
+                onblur="mail()"
+                type="email"
+                name="email"
+                id="email"
+                style="width: 100%"
+              />
+            </td>
+            <td style="color: red" id="mail">POOR</td>
+          </tr>
+          <tr>
+            <th>Password</th>
+            <td>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                style="width: 100%"
+                onkeyup="pass()"
+              />
+            </td>
+            <td style="color: red" id="pass">POOR</td>
+          </tr>
+          <tr>
+            <th>Re-enter Password</th>
+            <td>
+              <input
+                type="password"
+                name="rePassword"
+                id="rePassword"
+                style="width: 100%"
+                onblur="check()"
+              />
+            </td>
+            <td style="color: red" id="re">POOR OR MISMATCH</td>
+          </tr>
+          <tr>
+            <th>Gender</th>
+            <td>
+              <input onblur="gen()" type="radio" name="gender" id="male" />Male
+              <br />
+              <input
+                onblur="gen()"
+                type="radio"
+                name="gender"
+                id="female"
+              />Female
+            </td>
+            <td style="color: red" id="gen">POOR</td>
+          </tr>
+          <tr>
+            <th>Age</th>
+            <td>
+              <input
+                onkeyup="agee()"
+                type="number"
+                name="age"
+                id="age"
+                style="width: 100%"
+              />
+            </td>
+            <td style="color: red" id="ag">POOR</td>
+          </tr>
+          <tr>
+            <th>Phone Numer</th>
+            <td>
+              <input
+                onkeyup="num()"
+                type="number"
+                name="phone"
+                id="phNumber"
+                style="width: 100%"
+              />
+            </td>
+            <td style="color: red" id="num">POOR</td>
+          </tr>
+          <tr>
+            <th>Address</th>
+            <td>
+              <textarea
+                name=""
+                id="add"
+                cols="20"
+                rows="5"
+                style="width: 100%"
+                onkeyup="addd()"
+              ></textarea>
+            </td>
+            <td style="color: red" id="ad">POOR</td>
+          </tr>
+          <tr>
+            <th>State</th>
+            <td>
+              <input
+                onkeyup="st()"
+                type="text"
+                style="width: 100%"
+                name="State"
+                id="State"
+              />
+            </td>
+            <td style="color: red" id="st">POOR</td>
+          </tr>
+          <tr>
+            <th>Country</th>
+            <td>
+              <select name="Country" id="Country">
+                <option value="">Choose your country</option>
+                <option value="india">India</option>
+                <option value="USA">USA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>Languages Known</th>
+            <td>
+              <input type="checkbox" name="lang" id="English" />English
+              <input type="checkbox" name="lang" id="Kannada" />Kannada
+              <input type="checkbox" name="lang" id="Hindi" />Hindi
+              <input type="checkbox" name="lang" id="Teugu" />Telugu
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" />Hereby I declare all the given details
+              are true
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: right" colspan="2">
+              Log in to <a href="https://ethnus.com/">Ethnus</a> website
+            </td>
+          </tr>
+        </table>
+
+        <!-- <button style="margin-left: auto; margin-right: auto">Register</button> -->
+
+        <div style="text-align: center; margin-top: 10px">
+          <input
+            style="
+              border-radius: 10px;
+              background-color: red;
+              color: white;
+              padding-left: 20px;
+              padding-right: 20px;
+            "
+            type="submit"
+            value="Register"
+          />
+        </div>
+      </div>
+    </form>
+
+    <script src="task8.js"></script>
+  </body>
+</html>
